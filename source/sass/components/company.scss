@@ -1,0 +1,33 @@
+.company {
+  position: absolute;
+  margin-left: 70%;
+  font-size: 14px;
+}
+
+.company__item {
+  display: flex;
+  align-items: center;
+}
+
+.company__img {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+}
+
+.company__link {
+  text-transform: uppercase;
+  margin-left: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 35%;
+    right: -12px;
+    display: block;
+    width: 8px;
+    height: 5px;
+    background: url("../img/icon-link.svg") no-repeat;
+    background-size: cover;
+  }
+}

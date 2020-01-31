@@ -1,0 +1,47 @@
+.nav {
+  display: flex;
+  position: absolute;
+  min-width: 270px;
+  height: 100%;
+  margin-left: 20%;
+  padding-top: 20px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  position: relative;
+  margin-right: 35px;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.nav__item--active {
+  margin-right: 35px;
+  opacity: 1;
+  border-bottom: 5px solid #8DC540;
+}
+
+.nav__item--link {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14%;
+    right: -12px;
+    display: block;
+    width: 8px;
+    height: 5px;
+    background: url("../img/icon-link.svg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.nav__extra {
+  position: absolute;
+  display: block;
+  margin-left: 50%;
+}
