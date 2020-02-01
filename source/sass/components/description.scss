@@ -1,0 +1,19 @@
+.description {
+  width: 545px;
+  height: 98px;
+  padding-left: 29px;
+  padding-right: 45px;
+  padding-top: 18px;
+  padding-bottom: 25px;
+  margin-left: 20px;
+
+  background: #f2f2f2;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.239102),
+    0 4px 15px rgba(0, 0, 0, 0.0869282),
+    0 2px 3px rgba(0, 0, 0, 0.0651891);
+
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

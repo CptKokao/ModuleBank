@@ -1,21 +1,28 @@
 .alert {
   position: absolute;
+  top: 19px;
+  left: 0;
   display: block;
   width: 15px;
   height: 19px;
-  margin-left: 60%;
+  margin-left: 76%;
+
+  &:hover {
+    @include hover();
+    cursor: pointer;
+  }
 }
 
 .alert__count {
   position: absolute;
+  top: -5px;
+  left: 8px;
   width: 15px;
   height: 15px;
   font-size: 10px;
-  background: #E54D4D;
+  background: #e54d4d;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  top: -5px;
-  left: 8px;
 }

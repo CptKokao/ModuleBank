@@ -1,6 +1,7 @@
 .payment {
   display: flex;
   justify-content: flex-end;
+  background-color: #eeeff1;
 }
 
 .payment__wrapper {
@@ -8,7 +9,6 @@
   flex-direction: column;
   align-items: center;
   width: 900px;
-  height: 645px;
   box-shadow: -8px 9px 25px rgba(49, 68, 93, 0.23112);
 }
 
@@ -19,57 +19,76 @@
   width: 100%;
   height: 60px;
   padding-left: 25px;
-  background: rgba(0, 0, 0, 0.0289572);
+  background: #f8f8f8;
 
   h2 {
     font-size: 24px;
     font-weight: normal;
     line-height: 28px;
-    margin-left: 20px;
+    margin-left: 28px;
   }
 }
 
-// Сумма
-
-.total {
+.payment__scroll {
+  width: 100%;
+  height: 520px;
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ffffff;
+}
+
+// Сумма
+.total {
   margin-top: 25px;
+  margin-left: 12px;
 }
 
 .total__count {
-
   font-size: 46px;
   line-height: 54px;
-  color: #CF4545;
+  color: #cf4545;
 }
 
 .total__bill {
   font-size: 16px;
   line-height: 22px;
-  color: #2C2F32;
+  color: #2c2f32;
+  margin-left: 3px;
 
   span {
-    color: #828A96;
+    color: #828a96;
   }
 }
 
 .total__data {
-  width: 159px;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  width: 162px;
+  padding: 5px 10px;
   margin-top: 10px;
   font-size: 11px;
   line-height: 13px;
-  color: #FFFFFF;
-
-  background: #81C624;
-  border-radius: 125px;
+  color: #ffffff;
+  background: #81c624;
+  border-radius: 15px;
+  margin-left: 59px;
 
   span {
     text-transform: uppercase;
   }
+}
+
+// scroll
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #f2f2f2;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  box-shadow: inset 0 0 6px #c6c6c6;
 }

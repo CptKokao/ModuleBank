@@ -1,9 +1,11 @@
 .nav {
   display: flex;
   position: absolute;
+  top: 0;
+  left: 0;
   min-width: 270px;
   height: 100%;
-  margin-left: 20%;
+  margin-left: 18.5%;
   padding-top: 20px;
   color: #ffffff;
   font-size: 14px;
@@ -18,12 +20,16 @@
   margin-right: 35px;
   opacity: 0.8;
   text-transform: uppercase;
+
+  &:hover {
+    @include hover();
+  }
 }
 
 .nav__item--active {
   margin-right: 35px;
   opacity: 1;
-  border-bottom: 5px solid #8DC540;
+  border-bottom: 5px solid #8dc540;
 }
 
 .nav__item--link {
@@ -38,10 +44,4 @@
     background: url("../img/icon-link.svg") no-repeat;
     background-size: cover;
   }
-}
-
-.nav__extra {
-  position: absolute;
-  display: block;
-  margin-left: 50%;
 }

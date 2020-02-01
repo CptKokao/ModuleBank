@@ -1,0 +1,12 @@
+.extra {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  display: block;
+  margin-left: 48.5%;
+
+  &:hover {
+    @include hover();
+    cursor: pointer;
+  }
+}

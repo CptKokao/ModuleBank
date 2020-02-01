@@ -1,0 +1,44 @@
+.toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background: #ffffff;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.239102),
+    0 0 15px rgba(0, 0, 0, 0.0869282);
+}
+
+.toolbar__menu {
+  width: 545px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 12px;
+
+  a {
+    color: #2c2f32;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.toolbar__item {
+  :hover {
+    @include hover();
+    cursor: pointer;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  div {
+    display: flex;
+    margin-right: 10px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}

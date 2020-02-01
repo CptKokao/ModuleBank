@@ -17,10 +17,12 @@
     <header>
       <div class="header">
 
+        <!-- Поиск -->
         <div class="arrow">
           <input type="text" placeholder="Поиск">
         </div>
 
+        <!-- Навигация -->
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item nav__item--active"><a href="#">Деньги</a></li>
@@ -29,10 +31,12 @@
           </ul>
         </nav>
 
-        <a class="nav__extra">
-          <img class="nav__extra-img" src="img/icon-extra.svg" width="42" height="42" alt="Дополнительно меню">
+        <!-- Кнопка -->
+        <a class="extra">
+          <img class="extra-img" src="img/icon-extra.svg" width="42" height="42" alt="Дополнительно меню">
         </a>
 
+        <!-- Оповещения -->
         <a class="alert">
           <div class="alert__img">
             <img src="img/icon-alert.svg" width="15" height="19" alt="Оповещение">
@@ -40,6 +44,7 @@
           <span class="alert__count">2</span>
         </a>
 
+        <!-- Копмания -->
         <ul class="company">
           <li class="company__item">
             <div class="company__img">
@@ -49,7 +54,6 @@
           </li>
         </ul>
       </div>
-
     </header>
 
     <main>
@@ -57,53 +61,107 @@
         <div class="payment__wrapper">
 
           <!-- Заголовок -->
-
           <div class="payment__title">
             <a class="close"></a>
             <h2>Платежное поручение № 5241234 от 23.09.2015</h2>
           </div>
 
-          <!-- Сумма -->
-          <div class="total">
-            <p class="total__count">-23 500,00 &#8381;</p>
-            <p class="total__bill"><span>со счета:</span> Расчетный счет (***012345)</p>
-            <p class="total__data"><span>исполнен</span>, 21 июня 15:33</p>
-          </div>
-
-          <div class="card ">
-            <div class="card__requisite">
-              <h2>ООО &laquo;Родные просторы&raquo;</h2>
-              <p>ИНН: 22341497819132</p>
-              <p>Банк: ОАО Сбербанк</p>
-              <p>БИК: 2352362365</p>
-              <p>Счет: 40802810970010000395</p>
+          <div class="payment__scroll">
+            <!-- Сумма -->
+            <div class="total">
+              <p class="total__count">&minus; 23 500,00 &#8381;</p>
+              <p class="total__bill"><span>со счета:</span> Расчетный счет (***012345)</p>
+              <p class="total__data"><span>исполнен</span>, 21 июня 15:33</p>
             </div>
 
-            <div class="card__info">
-              <div class="card__detalis">
-                <p>Высокая финансовая устойчивость</p>
-                <div class="pie p1">
-                  <span>123</span>
-                </div>
+            <!-- Карточка -->
+            <div class="card">
+              <div class="card__requisite">
+                <h2>ООО &#34;Родные просторы&#34;</h2>
+                <p>ИНН: 22341497819132</p>
+                <p>Банк: ОАО Сбербанк</p>
+                <p>БИК: 2352362365</p>
+                <p>Счет: 40802810970010000395</p>
               </div>
 
-              <div class="card__detalis">
-                <p>Высокая благонадежность</p>
-                <div class="pie p1">
-                  <span>123</span>
+              <!-- Информация -->
+              <div class="card__info">
+                <div class="card__detalis">
+                  <p>Высокая финансовая устойчивость</p>
+                  <svg class="circle" width="44" height="44">
+                    <circle cx="22" cy="22" fill="transparent" r="18" stroke="#cccccc" stroke-width="2"/>
+                    <circle class="circle__transform" cx="22" cy="22" fill="transparent" r="18" stroke="#81c624" stroke-width="2" stroke-dasharray="92 113"/>
+                    <text x="13" y="27" font-size="16" fill="#444">88</text>
+                  </svg>
+                </div>
+
+                <div class="card__detalis">
+                  <p>Высокая благонадежность</p>
+                  <svg class="circle" width="44" height="44">
+                    <circle cx="22" cy="22" fill="transparent" r="18" stroke="#81c624" stroke-width="2"/>
+                    <text x="8" y="27" font-size="16" fill="#444">100</text>
+                  </svg>
+                </div>
+
+                <div class="card__detalis">
+                  <p>Кредитоспособность 44,5 млрд &#8381;</p>
+                  <svg class="circle" width="44" height="44">
+                    <circle cx="22" cy="22" fill="#81c624" r="20"/>
+                    <text x="16" y="22" font-size="20" fill="#fff">1</text>
+                    <text x="11" y="33" font-size="8" fill="#fff">Класс</text>
+                  </svg>
                 </div>
               </div>
+            </div>
 
-              <div class="card__detalis">
-                <p>Кредитоспособность 44,5 млрд &#8381;</p>
-                <div class="pie p1">
-                  <span>123</span>
-                </div>
-              </div>
+            <!-- Описание -->
+            <div class="description">
+              <p>Оплата за партию ромашек и одуванчиков по договору 14023-023 от 14.05.2015 г. Сумма 11430-00. В том числе НДС 18% - 1450,00 &#8381;</p>
+            </div>
 
+            <!-- Комиссия -->
+            <div class="tax">
+              <p>Комиссия банка: 70 р.</p>
+              <p>Размер комиссии рассчитан автоматически согласно тарифу вашей компании и является ознакомительным. Точный размер комиссии определяется после передачи платежного документа на обработку в банк.</p>
             </div>
           </div>
 
+          <div class="toolbar">
+            <ul class="toolbar__menu">
+              <li class="toolbar__item">
+                <a href="#">
+                  <div class="toolbar__img">
+                    <img src="img/icon-repeat.svg" width="20" height="20" alt="Повторить">
+                  </div>
+                  <p>Повторить</p>
+                </a>
+              </li>
+              <li class="toolbar__item">
+                <a href="#">
+                  <div class="toolbar__img">
+                    <img src="img/icon-star.svg" width="20" height="20" alt="Повторить">
+                  </div>
+                  <p>В избранное</p>
+                </a>
+              </li>
+              <li class="toolbar__item">
+                <a href="#">
+                  <div class="toolbar__img">
+                    <img src="img/icon-question.svg" width="20" height="20" alt="Повторить">
+                  </div>
+                  <p>Спросить</p>
+                </a>
+              </li>
+              <li class="toolbar__item">
+                <a href="#">
+                  <div class="toolbar__img">
+                    <img src="img/icon-more.svg" width="20" height="20" alt="Повторить">
+                  </div>
+                  <p>Действия</p>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </main>
