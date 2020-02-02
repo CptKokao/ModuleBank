@@ -6,3 +6,12 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "PT-Sans";
+  src: url("../fonts/PT-Sans-Regular.woff2") format("woff2");
+  src: url("../fonts/PT-Sans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

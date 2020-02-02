@@ -1,16 +1,18 @@
 .description {
   width: 545px;
-  height: 98px;
+  height: 100px;
+  margin-top: -2px;
   padding-left: 29px;
   padding-right: 45px;
-  padding-top: 18px;
+  padding-top: 20px;
   padding-bottom: 25px;
   margin-left: 20px;
+  border-radius: 2px;
 
   background: #f2f2f2;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.239102),
-    0 4px 15px rgba(0, 0, 0, 0.0869282),
-    0 2px 3px rgba(0, 0, 0, 0.0651891);
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.0869282),
+    0 0 0 rgba(0, 0, 0, 0.065189);
 
   p {
     font-size: 16px;

@@ -1,15 +1,15 @@
 .card {
   display: flex;
   width: 545px;
-  height: 193px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 25px;
-  padding-bottom: 15px;
-  margin-top: 15px;
+  height: 200px;
+  padding: 33px 30px 15px;
+  margin-top: 7px;
   margin-left: 20px;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.390682),
-    0 3px 10px rgba(0, 0, 0, 0.0869282);
+  background-image: url("../img/Shape.png");
+  background-size: 103.3%;
+  background-position-x: -9px;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .card__requisite {
